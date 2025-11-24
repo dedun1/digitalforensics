@@ -49,7 +49,7 @@ def main():
         print("Disk image not found.")
         return
 
-    print("Reading MBR from disk image...\n")
+    print("Reading MBR from disk image\n")
     
     mbr = read_mbr(IMAGE_PATH)
     parts = get_partitions(mbr)
