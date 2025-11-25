@@ -22,7 +22,7 @@ def showinstalledapps():
     print("\n Installed Applications")
     apps = read_csv("apps")
     print(f"Total: {len(apps)}")
-    for a in apps[:10]:
+    for a in apps[:200]:
         print(f"- {a.get('Program Name')} | Date/Time: {a.get('Date/Time')}")
 
 def showaccounts():
